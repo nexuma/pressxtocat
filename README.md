@@ -7,7 +7,7 @@ The facts may be a bit weird, not accurate, full of spelling errors or just not 
 ![alt text](https://github.com/nexuma/pressxtocat/blob/main/logo.png?raw=true)
 ## Usage
 
-- The slider will dictate how much time the fact will stay on the clipboard
+- The slider will dictate how much time the fact will stay on the clipboard to be replaced by another one
 - The activate button starts copying the facts to the clipboard
 - The refresh button fetches other facts from the API, the program has 100 facts before filtering them (there is a lot of garbage to clear) the amount varies but generally between 100 and 70. Anyway as soon as you get tired of them just hit refresh or restart the program. (this can take up to 5 seconds depending on your internet)
 - You can change the theme of the app between light and dark, however the app does not remember you settings yet. The default is system.
