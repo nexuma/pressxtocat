@@ -1,6 +1,6 @@
 
-# Press x to cat
-Revival of "Press x to cat" from Ginger. This app will copy clean cat facts to your keyboard using cat-fact.herokuapp.com API.
+# Press x to Cat
+Revival of "Press x to Cat" from Ginger. This app will copy clean cat facts to your keyboard using cat-fact.herokuapp.com API.
 
 ![alt text](https://github.com/nexuma/pressxtocat/blob/main/logo.png?raw=true)
 ## Installation
