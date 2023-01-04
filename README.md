@@ -14,26 +14,26 @@ There is currently no executable for MacOS or Linux. You will have to make it yo
 #### Checking for Python3
 You will need to have python3 on your MacOs or Unix machine. 
 
-Maybe you already have it, check by opening the terminal and typing ```python3 --version```. If you get an output you're good. If not, download the latest 3.x version from the [official python website](https://www.python.org/downloads/)
+Maybe you already have it, check by opening the terminal and typing ```python3 --version```. If you get an output you're good. If not, download the latest 3.x version from the [official python website](https://www.python.org/downloads/).
 #### Run the script
 1. Download the repository and open a terminal at that location. ( Open terminal and type ```cd /PATH/TO/FOLDER``` )
-2. ```python3 -m venv .env``` this creates a virtual environement for the program to keep it seperated
-3. ```source .env/bin/activate``` this activates the environement, you should see a (.env) at the beginning of the line
-4. ```pip install -r requirements.txt``` this install the required libraries for the project
-5. ```python3 main.py``` launches the app
-6. To deactivate the environement just type ```deactivate```
+2. ```python3 -m venv .env``` this creates a virtual environement for the program, to keep it from messing with anything else.
+3. ```source .env/bin/activate``` this activates the environement, you should see a (.env) at the beginning of the line.
+4. ```pip install -r requirements.txt``` this install the required libraries for the project.
+5. ```python3 main.py``` launches the app.
+6. To deactivate the environement just type ```deactivate```.
 7. Do step 3. then 5. to relaunch the app.
 
 ### Run script manually on Windows 
 #### Checking for Python3
-You will need to have python on your PC. Maybe you already have it, check by opening the terminal and typing ```python3 --version```. If you get an output you're good. If not, download on the latest 3.x version from the [official python website](https://www.python.org/downloads/)
+You will need to have python on your PC. Maybe you already have it, check by opening the terminal and typing ```python3 --version```. If you get an output you're good. If not, download on the latest 3.x version from the [official python website](https://www.python.org/downloads/).
 #### Run the script
-1. Download the repository and open a terminal at that location. ( windows key + R -> type "cdm" press "enter" then type ```cd C:/PATH/TO/FOLDER``` inside the opened window )
-2. ```python3 -m venv .env``` this creates a virtual environement for the program to keep it seperated
-3. ```call ./.env/Script/activate.bat``` this activates the environement, you should see a (.env) at the beginning of the line
-4. ```pip install -r requirements.txt``` this install the required libraries for the project
-5. ```python3 main.py``` launches the app
-6. To deactivate the environement just type ```deactivate```
+1. Download the repository and open a terminal at that location. ( windows key + R -> type "cdm" press "enter" then type ```cd C:/PATH/TO/FOLDER``` inside the opened window ).
+2. ```python3 -m venv .env``` this creates a virtual environement for the program, to keep it from messing with anything else.
+3. ```call ./.env/Script/activate.bat``` this activates the environement, you should see a (.env) at the beginning of the line.
+4. ```pip install -r requirements.txt``` this install the required libraries for the project.
+5. ```python3 main.py``` launches the app.
+6. To deactivate the environement just type ```deactivate```.
 7. Do step 3. then 5. to relaunch the app.
 
 
