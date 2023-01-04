@@ -7,10 +7,10 @@ The facts may be a bit weird, not accurate, full of spelling errors or just not 
 ![alt text](https://github.com/nexuma/pressxtocat/blob/main/logo.png?raw=true)
 ## Usage
 
-- The slider will dictate how much time the fact will stay on the clipboard to be replaced by another one
+- The slider will dictate how much time the fact will stay on the clipboard before being replaced by another one
 - The activate button starts copying the facts to the clipboard
 - The refresh button fetches other facts from the API, the program has 100 facts before filtering them (there is a lot of garbage to clear) the amount varies but generally between 100 and 70. Anyway, as soon as you get tired of them just hit refresh or restart the program. (this can take up to 5 seconds depending on your connection speed)
-- You can change the theme of the app between light and dark, however the app does not remember you settings yet. The default is system.
+- You can change the theme of the app between light and dark, however the app does not remember your settings yet. The default is system.
 ## Installation
 Download .exe from [releases](https://github.com/nexuma/pressxtocat/releases/tag/stable) or launch the script manually.
 There is currently no executable for MacOS or Linux. You will have to make it yourself using pyinstaller or just run the script for now.
