@@ -38,7 +38,7 @@ You will need to have python on your PC. Maybe you already have it, check by ope
 2. ```python3 -m venv .env``` this creates a virtual environement for the program, to keep it from messing with anything else.
 3. ```call .env/Scripts/activate.bat``` this activates the environement, you should see a (.env) at the beginning of the line.
 4. ```pip install -r requirements.txt``` this install the required libraries for the project.
-5. ```python3 main.py``` launches the app.
+5. ```python main.py``` launches the app.
 6. To deactivate the environement just type ```deactivate```.
 7. Do step 3. then 5. to relaunch the app.
 
