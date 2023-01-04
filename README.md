@@ -36,7 +36,7 @@ You will need to have python on your PC. Maybe you already have it, check by ope
 #### Run the script
 1. Download the repository and open a terminal at that location. ( windows key + R -> type "cdm" press "enter" then type ```cd C:/PATH/TO/FOLDER``` inside the opened window ).
 2. ```python3 -m venv .env``` this creates a virtual environement for the program, to keep it from messing with anything else.
-3. ```call ./.env/Script/activate.bat``` this activates the environement, you should see a (.env) at the beginning of the line.
+3. ```call .env/Scripts/activate.bat``` this activates the environement, you should see a (.env) at the beginning of the line.
 4. ```pip install -r requirements.txt``` this install the required libraries for the project.
 5. ```python3 main.py``` launches the app.
 6. To deactivate the environement just type ```deactivate```.
