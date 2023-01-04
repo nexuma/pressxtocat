@@ -22,6 +22,7 @@ Maybe you already have it, check by opening the terminal and typing ```python3 -
 4. ```pip install -r requirements.txt``` this install the required libraries for the project
 5. ```python3 main.py``` launches the app
 6. To deactivate the environement just type ```deactivate```
+7. Do step 3. then 5. to relaunch the app.
 
 ### Run script manually on Windows 
 #### Checking for Python3
@@ -33,6 +34,6 @@ You will need to have python on your PC. Maybe you already have it, check by ope
 4. ```pip install -r requirements.txt``` this install the required libraries for the project
 5. ```python3 main.py``` launches the app
 6. To deactivate the environement just type ```deactivate```
-
+7. Do step 3. then 5. to relaunch the app.
 
 
