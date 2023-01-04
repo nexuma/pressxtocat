@@ -4,6 +4,7 @@ import pyperclip
 import customtkinter
 import random
 
+
 #state variable
 active=False
 
@@ -15,28 +16,8 @@ AMOUNT = 100
 facts = []
 
 
-def generate_facts_list():
-	global facts
-	"""Gets facts from API and generates list"""
-	try:
-		response = requests.get(f"https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount={AMOUNT}")
-		data = response.json()
-		for i, el in enumerate(data):
-			fact = data[i]["text"]
-			if filter_fact(fact):
-				facts.append(fact)
-				
-	except Exception as e:
-		window = customtkinter.CTkToplevel()
-		window.geometry("400x200")
-		window.title("Error")
+		
 
-		label = customtkinter.CTkLabel(window, text=f"An error has occured while fetching the facts from the api. Error message: {e}", wraplength=300)
-		
-		label.pack(side="top", fill="both", expand=True)
-		
-	
-		
  # Filters for quality facts
 def has_url(text):
 	return bool(re.search(r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))", text))
@@ -69,7 +50,6 @@ def copy_to_clipboard():
 	if active:
 		pyperclip.copy(random.choice(facts))
 		root.after(int(slider.get()), copy_to_clipboard)
-		print("how")
 		
 
 		
@@ -99,70 +79,93 @@ def change_appearance_mode_event(new_appearance_mode: str):
 	"""theme changer"""
 	customtkinter.set_appearance_mode(new_appearance_mode)
 	
-	
+def generate_facts_list():
+	global facts
+	"""Gets facts from API and generates list"""
+	try:
+		response = requests.get(f"https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount={AMOUNT}")
+		data = response.json()
+		for i, el in enumerate(data):
+			fact = data[i]["text"]
+			if filter_fact(fact):
+				facts.append(fact)
+				
+	except Exception as e:
+		pass
+		window = customtkinter.CTkToplevel()
+		window.geometry("400x200")
+		window.title("Error")
 
+		label = customtkinter.CTkLabel(window, text=f"An error has occured while fetching the facts from the api. Error message: {e}", wraplength=300)
+		
+		label.pack(side="top", fill="both", expand=True)
+
+generate_facts_list()
+
+
+#def resource_path(relative_path):
+#    """ Get absolute path to resource, works for dev and for PyInstaller """
+#    try:
+#        # PyInstaller creates a temp folder and stores path in _MEIPASS
+#        base_path = sys._MEIPASS
+#    except Exception:
+#        base_path = os.path.abspath(".")
+#
+#    return os.path.join(base_path, relative_path)
 
 
 ###Start of customtkinter layout	
-customtkinter.set_appearance_mode("system")
-customtkinter.set_default_color_theme("blue")
+if __name__ == '__main__':
+	root = customtkinter.CTk()
 
-root = customtkinter.CTk()
+	customtkinter.set_appearance_mode("system")
+	customtkinter.set_default_color_theme("blue")
 
-root.geometry("170x500")
-root.minsize(170, 430)
 
-root.title("")
-root.iconbitmap("logo.ico")
+	root.minsize(170, 430)
 
-frame = customtkinter.CTkFrame(master=root)
-frame.pack(pady=0, padx=0, fill="both", expand=True)
+	root.title("")
+	root.iconbitmap( "logo.ico") #resource_path("logo.ico")
 
-label = customtkinter.CTkLabel(master=frame, text="Press x to cat", font=("Roboto", 24))
-label.pack(pady=12, padx=10)
+	frame = customtkinter.CTkFrame(master=root)
+	frame.pack(pady=0, padx=0, fill="both", expand=True)
 
-animal_label = customtkinter.CTkLabel(frame, text="Animal", font=("Roboto", 14))
-animal_label.pack(padx=20, pady=(0, 0),)
+	label = customtkinter.CTkLabel(master=frame, text="Press x to cat", font=("Roboto", 24))
+	label.pack(pady=12, padx=10)
 
-animal_optionemenu = customtkinter.CTkOptionMenu(frame, values=["Cat", "more incoming"], state="disabled")
-animal_optionemenu.pack(padx=20, pady=(0, 30))
+	animal_label = customtkinter.CTkLabel(frame, text="Animal", font=("Roboto", 14))
+	animal_label.pack(padx=20, pady=(0, 0),)
 
-slider_label = customtkinter.CTkLabel(frame, text=f"Copy interval: {copy_interval} ms", font=("Roboto", 14))
-slider_label.pack()
+	animal_optionemenu = customtkinter.CTkOptionMenu(frame, values=["Cat", "more incoming"], state="disabled")
+	animal_optionemenu.pack(padx=20, pady=(0, 30))
 
-slider = customtkinter.CTkSlider(master=frame, from_=0, to=10000, command=slider_event, number_of_steps=10000)
-slider.set(300)
-slider.pack(padx=20, pady=(0, 0))
+	slider_label = customtkinter.CTkLabel(frame, text=f"Copy interval: {copy_interval} ms", font=("Roboto", 14))
+	slider_label.pack()
 
-button = customtkinter.CTkButton(master=frame, text="Activate", command=activate, fg_color=("#16A500","#14A007"), hover_color="#043100", font=("Roboto", 14))
-button.pack(pady=(5,25), padx=10)
+	slider = customtkinter.CTkSlider(master=frame, from_=0, to=10000, command=slider_event, number_of_steps=10000)
+	slider.set(300)
+	slider.pack(padx=20, pady=(0, 0))
 
-refresh_label = customtkinter.CTkLabel(frame, text="Get new facts", font=("Roboto", 14))
-refresh_label.pack(pady=(20,0), padx=10)
-refresh_button = customtkinter.CTkButton(master=frame, text="Refresh", command=generate_facts_list,  font=("Roboto", 14))
-refresh_button.pack(pady=(0,10), padx=10)
+	button = customtkinter.CTkButton(master=frame, text="Activate", command=activate, fg_color=("#16A500","#14A007"), hover_color="#043100", font=("Roboto", 14))
+	button.pack(pady=(5,25), padx=10)
 
-appearance_mode_label = customtkinter.CTkLabel(frame, text="Appearance", font=("Roboto", 14))
+	refresh_label = customtkinter.CTkLabel(frame, text="Get new facts", font=("Roboto", 14))
+	refresh_label.pack(pady=(20,0), padx=10)
+	refresh_button = customtkinter.CTkButton(master=frame, text="Refresh", command=generate_facts_list,  font=("Roboto", 14))
+	refresh_button.pack(pady=(0,10), padx=10)
 
-appearance_mode_optionemenu = customtkinter.CTkOptionMenu(frame, values=["System","Dark","Light"],
-															   command=change_appearance_mode_event)
-appearance_mode_optionemenu.pack(padx=20, pady=(10, 10), side="bottom")
-appearance_mode_label.pack(padx=20, pady=(10, 0), side="bottom")
+	appearance_mode_label = customtkinter.CTkLabel(frame, text="Appearance", font=("Roboto", 14))
 
-#generate initial list
-generate_facts_list()	
-root.mainloop()
+	appearance_mode_optionemenu = customtkinter.CTkOptionMenu(frame, values=["System","Dark","Light"],
+																   command=change_appearance_mode_event)
+	appearance_mode_optionemenu.pack(padx=20, pady=(10, 10), side="bottom")
+	appearance_mode_label.pack(padx=20, pady=(10, 0), side="bottom")
+
+	#generate initial list
+
+	root.mainloop()
 
 	
+
+
 	
-	
-
-
-
-
-
-
-
-
-
-
