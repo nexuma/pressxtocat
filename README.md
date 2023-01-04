@@ -2,7 +2,7 @@
 # Press x to Cat
 Revival of "Press x to Cat" from Ginger. This app will copy clean cat facts to your clipboard every 300 ms using cat-fact.herokuapp.com API. 
 ## Difference with original versions
-The facts may be a bit weird, not accurate or just not as good as they used to be in Ginger versions. I will try to find a better API or just to get better results. I already need to filter out a lot of none-facts and weird strings. Maybe I'll just create a database of accurate good facts myself.
+The facts may be a bit weird, not accurate, full of spelling errors or just not as good as they used to be in Ginger versions. I will try to find a better API or just to get better results. I already need to filter out a lot of none-facts and weird strings. Maybe I'll just create a database of accurate good facts myself.
 
 ![alt text](https://github.com/nexuma/pressxtocat/blob/main/logo.png?raw=true)
 ## Installation
