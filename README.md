@@ -17,7 +17,7 @@ You will need to have python3 on your MacOs or Unix machine.
 Maybe you already have it, check by opening the terminal and typing ```python3 --version```. If you get an output you're good. If not, download the latest 3.x version from the [official python website](https://www.python.org/downloads/)
 #### Run the script
 1. Download the repository and open a terminal at that location. ( Open terminal and type ```cd $PATH_TO_FOLDER``` )
-2. ```python3 -m venv venv``` this creates a virtual environement for the program to keep it seperated
+2. ```python3 -m venv .env``` this creates a virtual environement for the program to keep it seperated
 3. ```source .env/bin/activate``` this activates the environement, you should see a (.env) at the beginning of the line
 4. ```pip install -r requirements.txt``` this install the required libraries for the project
 5. ```python3 main.py``` launches the app
