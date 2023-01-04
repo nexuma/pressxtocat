@@ -1,5 +1,5 @@
-# pressxtocat
-Revival of Press x to cat from ginger
+# Press x to cat
+Revival of Press x to cat from ginger. This app will copy clean cat facts to your keyboard using cat-fact.herokuapp.com API.
 
 ## Installation
 Download .exe from releases or launch the app yourself
