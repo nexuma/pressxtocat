@@ -4,7 +4,7 @@ Revival of "Press x to Cat" from Ginger. This app will copy clean cat facts to y
 
 ![alt text](https://github.com/nexuma/pressxtocat/blob/main/logo.png?raw=true)
 ## Installation
-Download .exe from [releases](https://github.com/nexuma/pressxtocat/releases/tag/stable) or "build" the app manually
+Download .exe from [releases](https://github.com/nexuma/pressxtocat/releases/tag/stable) or "build" the app manually.
 There is currently no executable for MacOS or Linux. You will have to make it yourself using pyinstaller or just run the script for now.
 
 
