@@ -11,10 +11,9 @@ The facts may be a bit weird, not accurate, full of spelling errors or just not 
 - The activate button starts copying the facts to the clipboard
 - The refresh button fetches other facts from the API, the program has 100 facts before filtering them (there is a lot of garbage to clear) the amount varies but generally between 40 and 60 are left. Anyway, as soon as you get tired of them just hit refresh or restart the program. (this can take up to 5 seconds depending on your connection speed)
 - You can change the theme of the app between light and dark, however the app does not remember your settings yet. The default is system.
-## Installation
-Download .exe from [releases](https://github.com/nexuma/pressxtocat/releases) or launch the script manually.
-There is currently no executable for MacOS or Linux. You will have to make it yourself using pyinstaller or just run the script for now.
 
+## Installation
+Download ".exe" or the ".app" file from [releases](https://github.com/nexuma/pressxtocat/releases) or launch the script manually.
 
 ### Run script manually on MacOS and Linux
 #### Checking for Python3
