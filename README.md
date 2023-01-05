@@ -13,7 +13,11 @@ The facts may be a bit weird, not accurate, full of spelling errors or just not 
 - You can change the theme of the app between light and dark, however the app does not remember your settings yet. The default is system.
 
 ## Installation
-Download ".exe" or the ".app" file from [releases](https://github.com/nexuma/pressxtocat/releases) or launch the script manually.
+Download the right executable file for your system from [releases](https://github.com/nexuma/pressxtocat/releases) or launch the script manually.
+### MacOs
+Download and unzip the "pressxtocat.app.zip" from the [releases](https://github.com/nexuma/pressxtocat/releases) page and execute the pressxtocat.app that is inside. The icon on the top bar of the window is broken for now.
+### Windows
+Download and execute the "pressxtocat.exe" from the [releases](https://github.com/nexuma/pressxtocat/releases) page.
 
 ### Run script manually on MacOS and Linux
 #### Checking for Python3
