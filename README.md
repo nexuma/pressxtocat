@@ -3,7 +3,7 @@
 Revival of "Press x to Cat" from Ginger. This app will periodically copy cat facts to your clipboard.
 
 ![alt text](https://github.com/nexuma/pressxtocat/blob/main/logo.png?raw=true)
-## Usage and features
+## Usage and Features
 - The slider will dictate how much time the fact will stay on the clipboard before being replaced by another one.
 - The activate button starts copying the facts to the clipboard.
 - Limit the length of the fact to 200 caracters so they fit in the in-game chat.
