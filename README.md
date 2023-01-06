@@ -1,15 +1,11 @@
 
 # Press x to Cat
-Revival of "Press x to Cat" from Ginger. This app will copy cat facts to your clipboard every 300 ms using herokuapp's API.
-## Difference with original versions
-The facts may be a bit weird, not accurate, full of spelling errors or just not as good as they used to be in Ginger versions. I will try to find a better API or just to get better results. I already need to filter out a lot of none-facts and weird strings. Maybe I'll just create a database of accurate good facts myself.
+Revival of "Press x to Cat" from Ginger. This app will periodically copy cat facts to your clipboard.
 
 ![alt text](https://github.com/nexuma/pressxtocat/blob/main/logo.png?raw=true)
 ## Usage
-
 - The slider will dictate how much time the fact will stay on the clipboard before being replaced by another one
 - The activate button starts copying the facts to the clipboard
-- The refresh button fetches other facts from the API, the program has 100 facts before filtering them (there is a lot of garbage to clear) the amount varies but generally between 40 and 60 are left. Anyway, as soon as you get tired of them just hit refresh or restart the program. (this can take up to 5 seconds depending on your connection speed)
 - You can change the theme of the app between light and dark, however the app does not remember your settings yet. The default is system.
 
 ## Installation
@@ -45,4 +41,9 @@ You will need to have python on your PC. Maybe you already have it, check by ope
 6. To deactivate the environement just type ```deactivate```.
 7. Do step 3. then 5. to relaunch the app.
 
-
+### Create executable yourself
+Use pyinstaller with the command:
+```bash
+pyinstaller --noconfirm --windowed --onefile --add-data ".env/Lib/site-packages/customtkinter;customtkinter/" --add-data "logo.ico;." --icon "logo.ico" main.py
+```
+The icon part will not work on mac, you therefor have to remove than including the corresponding line in the python file ```(root.iconbitmap(...))```
