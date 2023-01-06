@@ -18,9 +18,9 @@ Download and execute the "pressxtocat.exe".
 ## Manual execution
 ### Run script manually on MacOS and Linux
 #### Checking for Python3
-You will need to have python3 on your MacOs or Unix machine. 
+You will need to have python 3 on your MacOs or Unix machine. There are problems with python versions below 3.10, if you run into any problems use python version 3.10 or above.
 
-Maybe you already have it, check by opening the terminal and typing ```python3 --version```. If you get an output you're good. If not, download the latest 3.x version from the [official python website](https://www.python.org/downloads/).
+Maybe you already have it, check by opening the terminal and typing ```python3 --version```. If you get an output with the right version you're good. If not, download the latest 3.x version from the [official python website](https://www.python.org/downloads/).
 #### Run the script
 1. Download the repository and open a terminal at that location. ( Open terminal and type ```cd /PATH/TO/FOLDER``` )
 2. ```python3 -m venv .env``` this creates a virtual environement for the program, to keep it from messing with anything else.
