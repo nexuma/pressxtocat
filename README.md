@@ -11,9 +11,9 @@ Revival of "Press x to Cat" from Ginger. This app will periodically copy cat fac
 ## Installation
 Download the right executable file for your system from [releases](https://github.com/nexuma/pressxtocat/releases) or launch the script manually.
 ### MacOs
-Download and unzip the "pressxtocat.app.zip" from the [releases](https://github.com/nexuma/pressxtocat/releases) page and execute the pressxtocat.app that is inside. The icon on the top bar of the window is broken for now.
+Download and unzip the "pressxtocat.app.zip" and execute the pressxtocat.app that is inside. The icon on the top bar of the window is broken for now.
 ### Windows
-Download and execute the "pressxtocat.exe" from the [releases](https://github.com/nexuma/pressxtocat/releases) page.
+Download and execute the "pressxtocat.exe".
 
 ### Run script manually on MacOS and Linux
 #### Checking for Python3
