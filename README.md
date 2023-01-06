@@ -43,7 +43,8 @@ You will need to have python on your PC. Maybe you already have it, check by ope
 7. Do step 3. then 5. to relaunch the app.
 
 ### Create windows executable yourself
-Use pyinstaller with the command:
+- Install pyinstaller with ```pip install pyinstaller```
+- Then use the command:
 ```bash
 pyinstaller --noconfirm --windowed --onefile --add-data ".env/Lib/site-packages/customtkinter;customtkinter/" --add-data "logo.ico;." --icon "logo.ico" main.py
 ```
