@@ -15,6 +15,7 @@ Download and unzip the "pressxtocat.app.zip" and execute the pressxtocat.app tha
 ### Windows
 Download and execute the "pressxtocat.exe".
 
+## Manual execution
 ### Run script manually on MacOS and Linux
 #### Checking for Python3
 You will need to have python3 on your MacOs or Unix machine. 
