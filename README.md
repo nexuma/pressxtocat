@@ -6,7 +6,7 @@ Revival of "Press x to Cat" from Ginger. This app will periodically copy cat fac
 ## Usage and Features
 - The slider will dictate how much time the fact will stay on the clipboard before being replaced by another one.
 - The activate button starts copying the facts to the clipboard.
-- Limit the length of the fact to 200 caracters so they fit in the in-game chat.
+- Limit the length of the facts to 200 caracters so they fit in the in-game chat.
 - You can change the theme of the app between light and dark, however the app does not remember your settings yet. The default is system.
 
 ## Installation
