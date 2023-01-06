@@ -15,6 +15,13 @@ Download the right executable file for your system from [releases](https://githu
 Download and unzip the "pressxtocat.app.zip" and execute the pressxtocat.app that is inside. The icon on the top bar of the window is broken for now.
 ### Windows
 Download and execute the "pressxtocat.exe".
+## Notes
+- Some fact have weird characters inside, I already filter some of them but not all.
+- The mac version takes a bit of time to launch.
+- I did not test anything on any linux distro.
+- There are around 300 facts in total. Maybe I will collect cat facts and create a bigger list later.
+- The app does not remember settings for now.
+- I will add other animal or subjects to choose from later.
 
 ## Manual execution
 ### Run script manually on MacOS and Linux
