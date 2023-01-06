@@ -41,9 +41,8 @@ You will need to have python on your PC. Maybe you already have it, check by ope
 6. To deactivate the environement just type ```deactivate```.
 7. Do step 3. then 5. to relaunch the app.
 
-### Create executable yourself
+### Create windows executable yourself
 Use pyinstaller with the command:
 ```bash
 pyinstaller --noconfirm --windowed --onefile --add-data ".env/Lib/site-packages/customtkinter;customtkinter/" --add-data "logo.ico;." --icon "logo.ico" main.py
 ```
-The icon part will not work on mac, you therefor have to remove than including the corresponding line in the python file ```(root.iconbitmap(...))```
